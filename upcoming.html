@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Andrei Stoenică - Upcoming events</title>
+
+<script>
+(function () {
+    try {
+        const theme = localStorage.getItem("andrei-site-theme");
+        if (theme) {
+            document.documentElement.dataset.theme = theme;
+        }
+    } catch (e) {
+        // Ignore localStorage errors and use the default theme.
+    }
+})();
+</script>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="charter.css" />
+
+<link rel="stylesheet" href="theme.css">
+
+</head>
+
+
+<body style="font-family: charter">
+
+<p> 
+<div style="font-size: 34px"> 
+<strong>Andrei Stoenică</strong>
+</div>
+</p>
+
+<p>
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="research.html">Research and publications</a> |
+  <a href="upcoming.html">Upcoming events</a>
+</nav>
+
+</p>
+
+<hr>
+
+<ul>
+	<li> Focused Workshop on Combinatorial and Applied Algebraic Geometry, Alfred Rényi Institute, 			Budapest, November 2026 </li>
+	<br>
+	<li> Workshop on Higher dimensional varieties, Alfred Rényi Institute, Budapest, October 2026 </li>
+	<br>
+	<li> Simons School on Higher dimensional varieties, Alfred Rényi Institute, Budapest, October 2026 </li>
+</ul>
+
+
+<div class="theme-switcher" data-open="false">
+    <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Change colour theme"
+        aria-expanded="false"
+        aria-controls="theme-menu">
+        <span class="theme-toggle-mark" aria-hidden="true"></span>
+    </button>
+
+    <div
+        class="theme-menu"
+        id="theme-menu"
+        role="group"
+        aria-label="Colour themes">
+
+        <button
+            class="theme-option theme-1"
+            type="button"
+            data-theme="1"
+            aria-label="Colour palette 1"
+            aria-pressed="false">
+        </button>
+
+        <button
+            class="theme-option theme-2"
+            type="button"
+            data-theme="2"
+            aria-label="Colour palette 2"
+            aria-pressed="false">
+        </button>
+
+        <button
+            class="theme-option theme-3"
+            type="button"
+            data-theme="3"
+            aria-label="Colour palette 3"
+            aria-pressed="false">
+        </button>
+
+        <button
+            class="theme-option theme-4"
+            type="button"
+            data-theme="4"
+            aria-label="Colour palette 4"
+            aria-pressed="false">
+        </button>
+    </div>
+</div>
+
+<script src="theme.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Andrei Stoenică - Research</title>
+
+<script>
+(function () {
+    try {
+        const theme = localStorage.getItem("andrei-site-theme");
+        if (theme) {
+            document.documentElement.dataset.theme = theme;
+        }
+    } catch (e) {
+        // Ignore localStorage errors and use the default theme.
+    }
+})();
+</script>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="charter.css" />
+
+<link rel="stylesheet" href="theme.css">
+
+</head>
+
+
+<body style="font-family: charter">
+
+<p> 
+<div style="font-size: 34px"> 
+<strong>Andrei Stoenică</strong>
+</div>
+</p>
+
+<p>
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="research.html">Research and publications</a> |
+  <a href="upcoming.html">Upcoming events</a>
+</nav>
+
+</p>
+
+<hr>
+
+<p>
+
+My general area of interest is Algebraic Geometry, with a focus on moduli theory. More specifically, I am interested in geometric aspects of moduli spaces of curves and vector bundles/sheaves, Hilbert schemes and Brill-Noether theory.
+
+</p>
+
+<ol reversed>
+  
+  <li>The bielliptic locus in the Hilbert scheme of canonical curves is unirational <br> 
+  	<i> Annali di Matematica Pura ed Applicata </i> <strong> 205 </strong> 1465-1477 (2026) <br>
+	<a href="https://link.springer.com/article/10.1007/s10231-025-01643-3">link</a> <a href="https://			arxiv.org/abs/2504.00789">arXiv</a> <br>
+	<i>Note</i>: The published version has a few minor modifications. I did not update the arXiv version. </li>
+  
+  <br>
+  
+  <li> Brill-Noether loci on an Enriques surface covered by a Jacobian Kummer surface (with Irene Macías Tarrío and Călin Spiridon) <br>
+  	<i> Archiv der Mathematik </i> <strong> 125 </strong> 145-156 (2025) <br>
+	<a href="https://link.springer.com/article/10.1007/s00013-025-02129-7">link</a> <a href="https://arxiv.org/	abs/2409.17837">arXiv</a> <br></li>
+
+</ol>
+
+<div class="theme-switcher" data-open="false">
+    <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Change colour theme"
+        aria-expanded="false"
+        aria-controls="theme-menu">
+        <span class="theme-toggle-mark" aria-hidden="true"></span>
+    </button>
+
+    <div
+        class="theme-menu"
+        id="theme-menu"
+        role="group"
+        aria-label="Colour themes">
+
+        <button
+            class="theme-option theme-1"
+            type="button"
+            data-theme="1"
+            aria-label="Colour palette 1"
+            aria-pressed="false">
+        </button>
+
+        <button
+            class="theme-option theme-2"
+            type="button"
+            data-theme="2"
+            aria-label="Colour palette 2"
+            aria-pressed="false">
+        </button>
+
+        <button
+            class="theme-option theme-3"
+            type="button"
+            data-theme="3"
+            aria-label="Colour palette 3"
+            aria-pressed="false">
+        </button>
+
+        <button
+            class="theme-option theme-4"
+            type="button"
+            data-theme="4"
+            aria-label="Colour palette 4"
+            aria-pressed="false">
+        </button>
+    </div>
+</div>
+
+<script src="theme.js"></script>
+
+</body>
+</html>
