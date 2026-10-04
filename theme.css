@@ -66,6 +66,7 @@ body {
 
 a {
     color: var(--site-link);
+    text-decoration: none;
 }
 
 hr {
